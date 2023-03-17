@@ -1,0 +1,754 @@
+##############################################################################################################################################
+                                           MYSQL ACCESS.111
+##############################################################################################################################################
+Fixed VPN Ip address :- 10.10.22.45
+Wifi Ip address :- 172.29.182.122
+
+
+pr@nesh_987
+CREATE USER omkars@10.10.22.45 IDENTIFIED BY 'OmkaR$2877';
+
+sudo ansible-playbook -i nagios_ip.txt version.yml --syntax-check
+
+
+
+
+  Kindly provide access for below mentioned server:
+
+Server :  192.168.39.120
+
+System IP : 172.29.87.237
+
+User: praneshg 
+
+select user,host from mysql.user where user like '%praneshg%';
+CREATE USER omkars@10.10.22.45 IDENTIFIED BY 'OmkaR$2877';
+GRANT ALL PRIVILEGES ON  *.* TO 'omkars'@'10.10.22.45';
+GRANT SELECT,FILE ON *.* TO 'omkars'@'10.10.22.45';
+flush privileges;
+show grants for omkars@10.10.22.45;
+
+select user, host from mysql.user where user like '%mirza%';
+CREATE USER mirza@172.29.106.111 IDENTIFIED BY 'Mirza#172';
+GRANT SELECT ON *.* TO 'mirza'@'172.29.106.111';
+
+
+CREATE USER divakaran@10.10.22.58 IDENTIFIED BY 'DivakaRAN#172';
+GRANT SELECT,FILE ON *.* TO 'omkars'@'10.10.22.45';
+
+
+select user,host from mysql.user where user like '%omkars%';
+CREATE USER omkars@172.29.182.122 IDENTIFIED BY 'OmkaR$2877';
+GRANT ALL PRIVILEGES ON  *.* TO 'omkars'@'172.29.182.122';
+GRANT SELECT,FILE ON *.* TO 'omkars'@'172.29.182.122';
+update mysql.user set authentication_string='*C5CA23B89129DAF5967557C9C376E63FC74CDCD9' WHERE user='medhar' and host='172.29.110.175';
+update mysql.user set password='MedhaR$123' WHERE user='medhar' and host='172.29.110.175';
+drop user 'medhar'@'172.29.110.175';
+
+update mysql.user set authentication_string='*40C416C6D1B4C502B35EF203FC502BEF0B6C192E' WHERE user='sameer' and host='10.10.22.54';
+ALTER USER 'nikhilp'@'10.10.55.149' IDENTIFIED BY 'N!kh!L@304'; >>new version
+SET PASSWORD FOR 'praneshg'@' 172.29.87.237' = PASSWORD('pr@nesh_987');  >> old version>>>>>>>>>>>>>only password changing purpose without u
+
+
+
+
+CREATE USER 'yogeshv'@'172.29.87.75' IDENTIFIED BY 'ShravaNK$246';
+GRANT ALL PRIVILEGES ON  *.* TO 'yogeshv'@' 172.29.87.75';
+show grants for yogeshv@172.29.87.75;
+drop user 'yogeshv'@'172.29.87.78';
+update mysql.user set authentication_string='*8470C2A36EA83F792E0ED41A18603D234B67EED7' WHERE user='yogeshv' and host='172.29.87.75';
+
+
+mysql>select user,host,password from mysql.user where user like '%mahendras%';
+mysql>select user,host,authentication_string from mysql.user where user like '%jitendran%';
+mysql> select user,host,authentication_string from mysql.user where user like '%%jitendran%%';
++-----------+----------------+-----------------------+
+| user      | host           | authentication_string |
++-----------+----------------+-----------------------+
+| jitendran | 172.29.106.244 | *j1tendrAn$!719       |
++-----------+----------------+-----------------------+
+1 row in set (0.00 sec)
+
+mysql> GRANT ALL PRIVILEGES ON db_processing.* TO 'jitendran'@'172.29.106.244';
+
+mysql> GRANT ALL PRIVILEGES ON  test.* TO 'jitendran'@'172.29.106.244';
+
+mysql> GRANT SELECT ON *.* TO 'jitedran'@'172.29.106.244';
+
+mysql> flush privileges;
+
+select user,host from mysql.user where user like '%subrats%';
+CREATE USER subrats@172.29.87.72 IDENTIFIED BY 'subaRaao@123';
+
+GRANT SELECT ON *.* TO 'subrats'@'172.29.87.72';
+flush privileges;
+show grants for subrats@172.29.87.72;
+flush privileges;
+
+
+############################UPDATE THE PASSWORD###############################################################################################
+>update mysql.user set authentication_string='*1D994CAF067CA995AB832A7778EAE2A0E86E1A0E' WHERE user='jitendran' and host='172.29.106.244';
+##############################################################################################################################################
+
+mysql> select user,host,authentication_string from mysql.user where host like '%%172.29.106.244%%';
++-----------+----------------+-------------------------------------------+
+| user      | host           | authentication_string                     |
++-----------+----------------+-------------------------------------------+
+| jitendran | 172.29.106.244 | *1D994CAF067CA995AB832A7778EAE2A0E86E1A0E |
++-----------+----------------+-------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> show grants for jitendran@172.29.106.244;
++---------------------------------------------------------------------------+
+| Grants for jitendran@172.29.106.244                                       |
++---------------------------------------------------------------------------+
+| GRANT INSERT ON *.* TO `jitendran`@`172.29.106.244`                       |
+| GRANT ALL PRIVILEGES ON `test`.* TO `jitendran`@`172.29.106.244`          |
+| GRANT ALL PRIVILEGES ON `db_processing`.* TO `jitendran`@`172.29.106.244` |
+
+>select user,host,authentication_string from mysql.user where host like '%%172.29.106.244%%';
+
+
+where first *=========all databases(star uchinthe)  12  
+star kakunda ‘database name mention’ chesthie where all tables ni particular user access cheygaladu[ex:test db.*]
+where second star wich = all tables
+
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `mahendras`@`172.29.180.224` 
+where first star:all databases
+where second star:all tables
+where first star:one db mention & second star constant ga if you put=user a okka dblo unna tables ni full ga access cheygaladu & remaing db’s ni access cheyledu
+ex:1.grant all prvlges prasad on *.*=full db access
+  2.grant select on particular db.*=only that single db access nd in there all tables accessed by that  user
+
+|GRANT BACKUP_ADMIN,BINLOG_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,GROUP_REPLICATION_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SET_USER_ID,SYSTEM_VARIABLES_ADMIN,XA_RECOVER_ADMIN ON *.* TO `mahendras`@`172.29.180.224` 
+
+example:
+1.show databases;
+2.use tables;
+3.show tables;
+
+checking or cross veryfying particular table  available in database or not:
+
+
+finding table:
+
+4.mysql> desc temp_contractwise_leads_del_apr21_mar22;
++--------------------------+--------------+------+-----+---------+-------+
+| Field                    | Type         | Null | Key | Default | Extra |
++--------------------------+--------------+------+-----+---------+-------+
+| docid                    | varchar(100) | YES  | MUL |         |       |
+| deduction_date           | date         | NO   | MUL | NULL    |       |
+| unique_paid_leads_served | bigint(20)   | NO   |     | 0       |       |
+| data_src                 | varchar(50)  | NO   | MUL |         |       |
++--------------------------+--------------+------+-----+---------+-------+
+4 rows in set (0.04 sec)
+
+5.mysql> show tables like '%temp_contractwise_leads_%';
++----------------------------------------------------+
+| Tables_in_dbteam_temp (%temp_contractwise_leads_%) |
++----------------------------------------------------+
+| temp_contractwise_leads_ahm_apr21_mar22            |
+| temp_contractwise_leads_ban_apr21_mar22            |
+| temp_contractwise_leads_che_apr21_mar22            |
+
+#############################################################################################################################################
+                                   USER ALREADY THERE AND IF PASSWORD COPY FROM ANOTHER SERVER LIKE IF PW EXISTS
+#############################################################################################################################################
+
+
+user already unnadu ante password unnate so new machine ip ki mysql access ivali ante
+1.existing user and dummy password ivvali like 
+CREATE USER medhar@172.29.110.175  IDENTIFIED BY 'MedhaR$123';
+then after dummy password ni old string password tho update cheyali(auth_string)
+
+update mysql.user set authentication_string='*C5CA23B89129DAF5967557C9C376E63FC74CDCD9' WHERE user='medhar' and host='172.29.110.175';
+then mysql access ivvali
+GRANT ALL PRIVILEGES ON  *.* TO 'medhar'@'172.29.110.175';
+flush privileges;
+grants checking
+NOTES:
+same password kavalante for new user ip or machinne ip ki, we hv to another server nunchi replicate cheyali. ie above procedure
+update mysql.user set password='MedhaR$123' WHERE user='medhar' and host='172.29.110.175';
+
+
+##############################################################################################################################################
+                                           [Hostname change.222]
+#############################################################################################################################################
+
+1. hostnamectl
+   cat /etc/hosts
+2. vim /etc/hosts
+mk:
+27.0.0.1       localhost       localhost.localdomain   14-232-IDC.justdial.com
+14-232-IDC
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.29.0.249  jdspacewalk.jdsat.com  jdspacewalk
+
+3.
+[rajveer@29-65-IDC ~]$ sudo hostnamectl set-hostname 14-232-IDC.justdial.com
+[rajveer@29-65-IDC ~]$ sudo hostnamectl set-hostname "14-232-IDC.justdial.com" --pretty
+[rajveer@29-65-IDC ~]$ sudo hostnamectl set-hostname 14-232-IDC.justdial.com --static
+[rajveer@29-65-IDC ~]$ sudo hostnamectl set-hostname 14-232-IDC.justdial.com –transien
+o/p=logout nd login it will change to new hostname
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+##############################################################################################################################################
+                                            [FOR LOOP FOR TABLE TRANSFER.333]
+##############################################################################################################################################
+
+for i in `cat tables.txt`;do echo $i;mysqldump databasename $i > $i.sql;done....for dump(where:)
+or 
+for i in tables* ;do echo $i;mysqldump test $i > $i.sql;done
+for i in tbl_popularity*.sql ; do echo $i ;sudo mysql dbname < $i ;done......for restoration
+
+######when password asking for mysqlsocket login:#########################################################
+
+1.for i in `cat tables.txt`;do echo "Taking dump of $i"; sudo mysqldump --socket=/var/lib/SQL/mysql_6_180/mysql.sock db_jds $i > $i.sql;done
+2.for i in `cat tmp.txt`; do echo "Restoring :- $i"; sudo mysql db_jds < /home/rajveer/$i.sql; done
+
+Please transfer  below txt files  from 192.168.12.25 to 192.168.42.67 (in tmp  location)  and provide mysql access
+
+gzi
+##############################################################################################################################################
+                                        PROVIDING  MYSQL ACCESS TO FILE
+##############################################################################################################################################
+sudo chown-R mysql. www.access.log-link-loc-20221209_final.log_new {where dot is mysql access providing}
+
+
+##############################################################################################################################################
+                                                   NAGIOS IMPERATIVE
+##############################################################################################################################################
+root@12-78-IDC objects]# cd /etc/nagios/objects
+grep - "192.168.12.218" .
+config file.
+wr you can see:::::::::::::::::::::::::::::::::::::::::::ikkada 12.80 server config file and all config checks like mqsql,nagios,cron daemon  checks set up chestham ie 12.78 ane nagios server lo  
+
+systemctl status nagios 
+systemctl reload nagiosselect
+nagios -v /etc/nagios/nagios.cfg 
+systemctl restart nagios 
+systemctl status nagios
+sudo systemctl status nginx_exporter
+sudo systemctl status nginx_exporter -l
+
+
+[root@12-218-idc ~]# cat /etc/nagios/nrpe.cfg | grep slavestatus
+command[mysql_replication]= sudo /usr/lib64/nagios/plugins/check_mysql_slavestatus.sh -H localhost -P 3306 -u root
+:::::::::::::::::::::here all config files undela setup cheyali::::::::::::::::::::::::::::::
+
+
+##############################################################################################################################################
+                                                   SANDBOX CREATION
+#############################################################################################################################################
+Please provide samba access to 172.29.64.51 and create sandbox folder: Rishipatel
+
+Let me know if you need any more details.
+
+IP address: 172.29.110.92
+#############################################
+sandbox creation
+step1:
+open the link 
+http://192.168.8.150:8080/job/New_Sandbox_User_Creation-IDC/configure
+we have to check 172.29.64.51 this ip until find it(or verify in New sandbox creation process or new sandbox user creation or user creatin idc/configure)
+
+step2:
+go to (the build with parameters option):under this build requires parameters under MULTI-CONFG PROJ NEW_SANDBOX_USER_CREATION-IDC
+where we have to give 
+user name like Rishipatel in the rectangularbox then need to BUILD it nd see the cnsole output
+
+step3:
+sudo vim/etc/samba/smb.cnf= put IP address: 172.29.110.92.
+
+service smb status....................
+service smb reload
+ 
+ step4:
+ 
+ sudo smbpasswd -a name Rishipatel
+ give password:as per user requirement or justdial
+ service smb reload
+ step 6:
+ ssh Rishipatel@sanboxip=login or not verification purpose.
+ s
+ or or or
+ 
+ [2023-01-12] [10:59:48] cd /home/
+  216  [2023-01-12] [10:59:56] ll -lrth | grep shrirambanewar
+  217  [2023-01-12] [11:00:25] sudo vselectim /etc/samba/smb.conf.............put user system ip
+  219  [2023-01-12] [11:02:16] sudo smbpasswd -a shrirambanewa..........put password
+  222  [2023-01-12] [11:03:21] sudo service smb reload
+  223  [2023-01-12] [11:03:32] sudo service smb status
+  ssh Amankumar@192.168.40.172........>login user by sandbox ip for loggin or not.
+
+##############################################################################################################################################
+                                                  filebeat search
+#############################################################################################################################################
+
+
+[rajveer@37-51-IDC ~]$ ps aux | grep filebeat
+rajveer  215532  0.0  0.0 112812   972 pts/0    S+   15:30   0:00 grep --color=auto filebeat
+root     235289  0.4  0.0  61660 23992 ?        Ssl   2021 2285:47 /usr/share/filebeat/bin/filebeat -c /etc/filebeat/filebeat.yml -path.home /usr/share/filebeat -path.config /etc/filebeat -path.data /var/lib/filebeat -path.logs /var/log/filebeat
+
+[root@37-51-IDC ~]#  cat /etc/filebeat/filebeat.yml | egrep -i 'index|hosts|\.log'| grep -v \#
+    - /var/log/nginx/category_api.access.log
+    - /var/log/php-fpm/mobileapi-error.log
+    - /var/log/container_logs/php-fpm/mobileapi001/mobileapi-error.log
+output.logstash:
+  hosts: ["192.168.41.27:5044", "192.168.41.28:5044"]
+  index: category_api
+
+##############################################################################################################################################
+                                            installation mysql replica from master
+#############################################################################################################################################
+
+[rajveer@17-224-IDC ~]$ sudo vim /etc/my.cnf
+[rajveer@17-224-IDC ~]$ sudo vim /etc/my.cnf
+[rajveer@17-224-IDC ~]$ sudo service mysqld status
+Redirecting to /bin/systemctl status mysqld.service
+● mysqld.service - MySQL Community Server
+   Loaded: loaded (/usr/lib/systemd/system/mysqld.service; enabled; vendor preset: disabled)
+   Active: inactive (dead)
+[rajveer@17-224-IDC ~]$ sudo vim /etc/my.cnf
+[rajveer@17-224-IDC ~]$ ll -rth /var/lib/mysql
+total 0
+[rajveer@17-224-IDC ~]$ ll -ld /var/lib/mysql
+drwxr-xr-x 2 mysql mysql 4096 Nov 21  2014 /var/lib/mysql
+[rajveer@17-224-IDC ~]$ sudo service mysqld start
+
+INSTALLATION:
+
+from http://172.29.0.123/download/= where hv to copied the selective one
+wget http://172.29.0.123/download/mysql_5.6.22_community_el6.tar.gz 
+ll -lrth
+mysql_5-6-22_el7_x86_64=you can get like this
+ll-lrth 
+rw-r--r-- 1 rajveer rajveer 3.4M Dec  7 17:10 mysql-community-devel-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer 256K Dec  7 17:10 mysql-community-common-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer  23M Dec  7 17:10 mysql-community-embedded-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer  58M Dec  7 17:10 mysql-community-server-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer  65M Dec  7 17:10 mysql-community-embedded-devel-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer  57M Dec  7 17:10 mysql-community-test-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer  20M Dec  7 17:10 mysql-community-client-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer 2.1M Dec  7 17:10 mysql-community-libs-5.6.22-2.el7.x86_64.rpm
+-rw-r--r-- 1 rajveer rajveer 411K Dec  7 17:10 mysql-community-bench-5.6.22-2.el7.x86_64.rpm
+sudo yum install mysql-community*
+THEN
+
+NEED TO COPY MY.CNF FILE HERE FROM ANY EXISTENCE MYSQL SERVER :EX: scp /etc/my.cnf rajveer@192.168.17.224:
+scp /etc/my.cnf rajveer@192.168.17.224:
+
+[2022-12-07] [17:27:09] sudo mkdir -p /var/lib/SQL/mysql
+   45  [2022-12-07] [17:27:21] ll -rth
+   46  [2022-12-07] [17:27:40] ll -ld /var/lib/SQL/mysql/
+   48  [2022-12-07] [17:28:29] sudo chown -R mysql. /var/lib/SQL/
+   49  [2022-12-07] [17:28:31] ll -ld /var/lib/SQL/
+   50  [2022-12-07] [17:28:37] sudo service mysqld status
+   51  [2022-12-07] [17:28:47] sudo service mysqld start
+   52  [2022-12-07] [17:28:51] sudo service mysqld status
+   54  [2022-12-07] [17:28:56] sudo mysql
+   55  [2022-12-07] [17:29:06] ps aux | grep mysql
+ 
+##############################################################################################################################################
+                                          HARDENNING
+##############################################################################################################################################
+22 [2019-11-27] [02:46:05] df -h
+23 [2019-11-27] [02:46:05] cd /
+24 [2019-11-27] [02:46:05] du -hsc *
+25 [2019-11-27] [02:46:05] cd
+26 [2019-11-27] [02:46:05] ip r l
+27 [2019-11-27] [02:46:05] ping www.google.com
+28 [2019-11-27] [02:46:05] cat /etc/redhat-release
+37 [2019-11-27] [02:46:05] service NetworkManager status
+38 [2019-11-27] [02:46:05] service NetworkManager stop..............................must
+39 [2019-11-27] [02:46:05] service NetworkManager status
+29 [2019-11-27] [02:46:05] yum install vim net-tools wget sysstat stat device-mapper-multipath* vsftpd lftp psmisc utils.pm yum-utils
+30 [2019-11-27] [02:46:05] dmidecode -t 1............................................manfacturer details
+31 [2019-11-27] [02:46:05] wget http://172.29.0.123/download/Centos7_configure.sh
+32 [2019-11-27] [02:46:05] ll -lrth
+33 [2019-11-27] [02:46:05] chmod +x Centos7_configure.sh
+34 [2019-11-27] [02:46:05] ll -lrth
+35 [2019-11-27] [02:46:05] ./Centos7_configure.sh...............................beware one is nope
+
+EDITOR:
+1.BASIC CONFIG CHANGES
+2.NGINX INSTALL
+3.MARIADB INSTALL 
+4.SPHINX INSTALL
+5.NIC BONDING
+6.CHANGE SATTELITE SERVER REG
+7.RUN AUDIT 
+
+
+8.EXIT
+
+IKKADA ASKING PLZ. INPUT YOUR CHOICE(1-8).............refrence {{{image:16:32&16:35&16:38&16:42}}}}}}:pwd:screenshot:2022-12-07 16-32-30.png
+
+CHOOSE 1 ::
+asking like
+plz.type your name:
+prasad
+give yes whatever packages you want...................................................yes
+
+[carefull give options  here]
+give no	 option whereever you will get like configuring password policy creating shell accounts for linux team members & sudeors additions
+is this system being configured for shroes (y/N)
+must be given :	N..........................................................................................choose NO then next
+EXIT:8.....................................................................................................choose 8	
+
+36 [2019-11-27] [02:46:05] yum update -y
+40 [2019-11-27] [02:46:05] ifconfig
+41 [2019-11-27] [02:46:05] ip r l
+42 [2019-11-27] [02:46:05] init 6............................................................restart
+43 [2019-11-27] [02:42:12] history
+44 [2019-11-27] [02:30:21] ifconfig
+45 [2019-11-27] [02:30:35] ethtool enp3s0f0
+46 [2019-11-27] [02:30:49] ethtool enp3s0f1
+47 [2019-11-27] [02:31:00] ethtool ens1f0
+48 [2019-11-27] [02:31:15] ethtool ens1f1   ::::::::::]]]]]]]]]] here active bondings we hv to take like ens1 and ens2
+49 [2019-11-27] [02:31:29] ethtool ens1f2
+50 [2019-11-27] [02:31:33] ethtool ens1
+51 [2019-11-27] [02:31:42] ethtool enp3s0f0
+52 [2019-11-27] [02:31:49] ethtool enp3s0f1
+53 [2019-11-27] [02:31:58] ll -lrth
+54 [2019-11-27] [02:32:07] ifconfig
+55 [2019-11-27] [02:32:56] ethtool enp3s0f0
+56 [2019-11-27] [02:33:04] ethtool enp3s0f1
+57 [2019-11-27] [02:34:23] ll -lrth
+BONDING:
+58 [2019-11-27] [02:34:29] ./Centos7_configure.sh........................................CHOOSE OPTION 5
+EDITOR:
+image :16:48
+here we hve have to mention first and second bonds names
+59 [2019-11-27] [02:35:13] service network status
+60 [2019-11-27] [02:35:29] service network restart
+61 [2019-11-27] [02:37:41] ifconfig
+62 [2019-11-27] [02:37:57] cat /proc/net/bonding/bond0
+63 [2019-11-27] [02:38:48] ip r l
+64 [2019-11-27] [02:39:34] ifdown enp3s0f0
+65 [2019-11-27] [02:39:37] cat /proc/net/bonding/bond0
+66 [2019-11-27] [02:40:45] ifup enp3s0f0
+67 [2019-11-27] [02:40:50] cat /proc/net/bonding/bond0
+68 [2019-11-27] [02:41:04] ifdown enp3s0f1
+69 [2019-11-27] [02:41:06] cat /proc/net/bonding/bond0
+70 [2019-11-27] [02:42:43] ifup enp3s0f1
+71 [2019-11-27] [02:42:45] cat /proc/net/bonding/bond0
+72 [2019-11-27] [02:45:02] history
+
+
+##############################################################################################################################################
+                                          ANSIBLE IMPERATIVE for all slaves lag report
+##############################################################################################################################################
+1.vim ansible.cfg 
+[defaults]
+ansible_user=prasadk
+ansible_password=ju5tD1@lcr0mA
+become=TRUE
+2.cat all_slaves_lag.txt
+[all_servers]
+192.168.41.40
+192.168.41.241
+192.168.41.239
+192.168.35.61
+192.168.13.21
+192.168.41.112
+192.168.39.81
+192.168.39.66
+192.168.39.82
+3. vim m_server_lag.yml
+---
+
+  - name: checking show slave status\G
+    hosts: all_servers
+    become: yes
+    become_user: web_backup
+    tasks:
+      - name: checking show slave status
+        shell: sudo mysql -e "show slave status \G" | grep -i second | awk '{if ($2>0)print $0}' 
+
+
+        register: command_output
+
+      - name: command output
+        debug:
+          #var: command_output
+           msg: "{{ command_output.stdout_lines }}"
+4.you can see the output of slave server lag result
+
+##############################################################################################################################################
+                          2.shell scripting like for finding 3307 port of mysql connected out of below slaves 
+##############################################################################################################################################
+total all slave servers lo 3306 and 3307 port meedha runninng mysql unnai so indulo only 3307 kavali for shell script below here 
+justdial@BLR-1PR3NL3:~/ansible_master$ vim slave_3307.sh 
+#!/bin/bash
+
+b="192.168.41.40
+192.168.41.241
+192.168.41.239
+192.168.35.61
+192.168.13.21
+192.168.41.112
+192.168.39.81
+192.168.39.66
+192.168.39.82
+192.168.39.56
+192.168.39.175
+192.168.39.54
+192.168.39.110
+192.168.23.66
+192.168.17.216
+192.168.17.104
+192.168.12.232
+192.168.12.219
+192.168.12.89
+192.168.42.196"
+
+
+for i in $b;
+
+do 
+
+echo "###########$i###########";
+
+ssh web_backup@$i "sudo netstat -nltp | grep -i :3307 " ;
+
+done
+
+Or
+
+
+for i in $b;
+
+do 
+
+echo "###########$i###########";
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::;;;;;;;;;;;;
+or
+ssh web_backup@$i sudo ps auxwwfff | grep "socket" | grep "3307" | awk '{print $(NF-1)}' | grep "socket" ;
+
+done
+
+##############################################################################################################################################
+                                Ansible job for how many slaves connected their cpu ram instance          
+##############################################################################################################################################
+1.cat slaves_ip.yml
+---
+  -name: checking show slave hosts
+    hosts: all_servers
+    become: yes
+    become_user: web_backup
+    tasks:
+      - name: checking show slave hosts
+        shell: sudo mysql -Bse "show slave hosts;" | awk '{print $2}'
+
+        register: command_output
+
+      - name: command output
+        debug:
+          #var: command_output
+           var: command_output.stdout_lines
+
+2.cat slaves_ip.yml
+---
+  - name: checking show slave hosts
+    hosts: all_servers
+    become: yes
+    become_user: rajveer
+    tasks:
+      - name: checking show slave hosts
+        shell: |
+         sudo mysql -Bse "show slave hosts;" | awk '{print $2}'
+         sudo mysql -Bse "show variables where Variable_name='innodb_buffer_pool_instances'"
+         free -g | grep Mem | awk '{print $2}' 
+         nproc 
+        register: command_output
+
+      - name: command output
+        debug:
+          #var: command_output
+           var: command_output.stdout_lines
+##############################################################################################################################################
+                               4.location based ansible job for each master how many slaves connected
+##############################################################################################################################################
+          
+[rajveer@12-78-IDC master_slave_old.txt]$ cat 192.168.43.171_slave.txt...........................master
+[all_servers]                                                         ...........................slaves
+192.168.43.110
+[rajveer@12-78-IDC master_slave_old.txt]$ cat 192.168.44.171_slave.txt............................master
+[all_servers]
+192.168.44.110                                                        ............................slaves
+[rajveer@12-78-IDC master_slave_old.txt]$ cat 192.168.48.171_slave.txt.........................master
+[all_servers]                                                        ..........................slaves
+192.168.48.110
+[rajveer@12-78-IDC master_slave_old.txt]$ cat 192.168.16.38_slave.txt..........................master
+[all_servers]
+192.168.16.39                                                      .............................slaves
+
+ sudo ansible-playbook -i 192.168.43.171_slave.txt  slaves_ip.yml -u web_backup
+
+##############################################################################################################################################
+                                                    crond
+##############################################################################################################################################
+ sudo -i
+sudo service crond status
+sudo service crond start
+sudo service crond status
+
+##############################################################################################################################################
+                                                    General
+##############################################################################################################################################
+sudo -i 
+sudo netstat -ntlp
+sudo service crond status
+
+ps aux | grep -i proposal_process..............................................................searching
+ll -lrth | grep -i lock
+ll /var/log/daily_log/proposal_process_ahmedabad.log
+less /var/log/daily_log/proposal_process_ahmedabad.log
+tailf /var/log/daily_log/onboarding_process_php.log
+scp /var/log/daily_log/onboarding_process_php.log justdial@172.29.64.64:
+
+ps aux | grep -i proposal_process
+ll -lrth | grep -i lock
+ll /var/log/daily_log/proposal_process_ahmedabad.log
+less /var/log/daily_log/proposal_process_ahmedabad.log
+tailf /var/log/daily_log/onboarding_process_php.log
+scp /var/log/daily_log/onboarding_process_php.log bhavesh@172.29.64.64:
+sudo -i
+sudo service crond status
+sudo service crond start
+GRANT ALL PRIVILEGES ON  *.* TO 'medhar'@'10.10.22.5';
+CREATE USER medhar@10.10.22.5 IDENTIFIED BY 'MedhaR$123';
+update mysql.user set authentication_string='*C5CA23B89129DAF5967557C9C376E63FC74CDCD9' WHERE user='medhar' and host='172.29.110.175';
+update mysql.user set password='MedhaR$123' WHERE user='medhar' and host='172.29.110.175';
+drop user 'medhar'@'172.29.110.175';
+sudo service crond status
+sudo service mysqld status
+
+service smb status
+service smb reload
+sudo vim/etc/samba/smb.cnf
+systemctl status nagios
+systemctl reload nagios
+nagios -v /etc/nagios/nagios.cfg
+systemctl restart nagios
+systemctl status nagios
+GRANT ALL PRIVILEGES ON  *.* TO 'medhar'@'10.10.22.5';
+CREATE USER medhar@10.10.22.5 IDENTIFIED BY 'MedhaR$123';
+update mysql.user set authentication_string='*C5CA23B89129DAF5967557C9C376E63FC74CDCD9' WHERE user='medhar' and host='172.29.110.175';
+update mysql.user set password='MedhaR$123' WHERE user='medhar' and host='172.29.110.175';
+drop user 'medhar'@'172.29.110.175';
+sudo systemctl status nginx_exporter
+sudo systemctl status nginx_exporter -l
+sudo chown-R mysql. www.access.log-link-loc-20221209_final.log_new {where dot is mysql access providing}
+
+for i in `cat tables.txt`;do echo $i;mysqldump databasename $i > $i.sql;done....for dump(where:)
+or
+for i in tables* ;do echo $i;mysqldump test $i > $i.sql;done
+for i in tbl_popularity*.sql ; do echo $i ;sudo mysql dbname < $i ;done......for restoration
+or
+1.for i in `cat tables.txt`;do echo "Taking dump of $i"; sudo mysqldump --socket=/var/lib/SQL/mysql_6_180/mysql.sock db_jds $i > $i.sql;done
+2.for i in `cat tmp.txt`; do echo "Restoring :- $i"; sudo mysql db_jds < /home/rajveer/$i.sql; done
+
+df -hT
+dmidecode -t 1
+du -hsc
+Du -hsc * /  grep g
+du -hsc *l grep G
+
+Kpraj@295
+rpm -qa | grep docker
+ps auxwwf
+cat /var/www/production/accounts.justdial.com_services/ssoNodeAPI/server.js
+sudo multipath -ll
+ip r
+cd /etc/yum.repos.d/
+ cat /etc/my.cnf | grep 'innodb_buffer_pool_size='
+sudo crontab -l
+systemctl status crond
+  355  [2022-12-01] [17:23:48] systemctl restart crond
+  356  [2022-12-01] [17:23:56] sudo systemctl restart crond
+  357  [2022-12-01] [17:24:05] sudo systemctl status crond
+  rpm -qa | grep -i mongo
+  rpm -qa | grep -i php |wc -l
+sudo systemctl status mongodb
+  323  [2022-11-29] [20:12:40] sudo systemctl status mongod
+  324  [2022-11-29] [20:14:05] sudo rpm -qa | grep "mongo"
+  325  [2022-11-29] [20:14:26] sudo rpm -qa | grep "pecl-mongo"
+  326  [2022-11-29] [20:16:19] sudo php -v 
+sudo rpm -qa | grep "mongo"
+free -g | grep Mem | awk '{print $2}'
+ifconfig 
+   20  [2017-01-04] [19:29:40] ip r l
+   21  [2017-01-04] [19:30:09] ifconfig | head
+   22  [2017-01-04] [19:30:19] ifconfig | head -n 50
+   23  [2017-01-04] [19:30:28] ifconfig | head -n 15
+   24  [2017-01-04] [19:30:32] ifconfig | head -n 13
+ ssh web_backup@172.29.64.48
+sudo chown -R root. /scripts/talktime_employee_proposal_data.sh
+tailf /tmp/talktime_employee_proposal_data.log
+########################################################################################
+table transfer:mysql count:
+rajveer@39-120-IDC ~]$ sudo mysql -e "select count(1) from india_snapshot.temp_attribute_data_20221229";
+dump:sudo mysqldump dbname tablename > tablename.sql
+gzip tablename.sql.gz and scp to destination
+unzip the file on destination
+restoration:sudo mysql dbname < tablename.sql
+#######################################################################################
+index rotation:category_auto_idx
+#######################################################################################
+sudo vim webport_sphinx1.conf
+  622  [2023-02-02] [19:39:29] sudo indexer -c /etc/sphinex/webport_sphinx1.conf soundex_suggest_idx --rotate 
+  623  [2023-02-02] [19:39:58] sudo vim webport_sphinx1.conf
+  624  [2023-02-02] [19:42:36] sudo indexer -c /etc/sphinx/webport_sphinx1.conf soundex_suggest_idx --rotate
+  625  [2023-02-02] [19:40:46] cd /var/lib/webport_sphinx1/category_indexes/soundex_suggest_idx
+  626  [2023-02-02] [19:40:53] ll /var/lib/webport_sphinx1/category_indexes/soundex_suggest_idx
+  627  [2023-02-02] [19:41:04] ll /var/lib/webport_sphinx1/category_indexes/
+#######################################################################################
+ finding logs
+ sudo /var/log/nginx
+###############################################################
+multipath -ll | grep 69c37f41007f4229cdff561b0000000f
+df -hT
+df -hT | grep mpathd
+ll /mnt/
+mount /dev/mapper/mpathd /mnt/
+df -h
+cd /mnt/
+ll
+ll -lrth 
+cd mysql
+ll -lrht 
+cd justdial/
+ll -lrht 
+ cd
+df -h
+umount /mnt/
+ df -h
+#########################################################
+php /httpdjail/var/www/html/trafic_report/mongo_fetch_v3.php >/var/log/daily_log/mongo_fetch_v3.log 2>&1
+The script is created Successfully. Kindly provide a suitable time for
+testing it.
+#############
+Kindly provide an approval for this.
+We have created the script. Please let us know when can we test the script.
+##########################
+Needful has been done.Credentials remains the same as before.Please check the connectivity.Kindly let us know if anything else is required.
+Access has been Provided. Please check the connectivity.
+##############################################################################
+POA MYSQL upgrade from 5.xx to 5.xx and 5.xx to 5.6.xx and 5.6.xx to 5.7.xx 
+
+please perform below steps MYSQL updration
+
+Step 1: Stop mysql gracefully on server 
+Step 2: copy /etc/my.cnf to /etc/my.cnf_date 
+Step 3: Uninstall exising mysql packages
+Step 4: install new MYSQL package 
+Step 5: replace my.cf from backup
+Step 6: place mysql.mysql owner persmission on datadir  
+Step 7: start MYSQL on new version 
+Step 8: run mysql_upgrade command from terminal and monitor mysqld.log 
+Step 9: connect mysql console & do the flush tables and flush privileges
+Step 10: Restart mysql 

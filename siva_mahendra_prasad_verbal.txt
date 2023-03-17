@@ -1,0 +1,263 @@
+1.Please let us know which access has to be given for 192.168.16.3
+Still i am unable to access the requested db's .
+
+2.Please check the attachment for reference and let me know if you need any other info
+
+3.As requested needful is done let us know if needed.
+Please provide approval from the stake(Sunny Shende).
+
+password will share one to one 
+
+4.kindly please check host address i can see in screenshot you have mentioned another ip   please go through this  192.168.1.8
+let me know if any needed
+
+kindly go through this  
+
+5.Script is working fine and we have also set the cron.
+
+sh /scripts/hot_lead_report_manual.sh > /var/log/daily_log/hot_lead_report_manual.log 2>&1
+
+6.Hi Shrikant
+
+Needful has been Done. Will share credentials one to one.
+
+7.Hi Suprajit,
+
+Cron timing has been changed to 7:45 pm except Saturday.
+
+45 19 * * 0-5 sh /scripts/allocation_contactnumber_daily_update.sh > /var/log/daily_log/allocation_contactnumber_daily_update.log 2>&1
+
+8.Below steps are added in the script.
+
+9.Please specify what kind of access do you want like mysql access or 
+samba or any thing else
+
+10.kindly provide an approval for the access.
+11.Please let us know which type of access has to be provided.
+Needful has been Done. Credentials will be shared one to one.
+#######################################approval############################################################################
+
+Please provide approval to proceed further and also let us know the samba server IP on which you need smb access.
+
+Needful has been Done. Please check the connectivity. 
+Credentials are same as previous access.
+########################################
+                Kindly provide details like machine IP where you want access.
+Script was executed successfully.
+Please provide approval and also let us know which type of access has to be provided.
+Please provide an approval for this to proceed further.
+Kindly let us know if anything else is required.
+Kindly check and confirm
+Done as requested and cron details are as listed below. 
+Please confirm once done. 
+Hello Rohit Sir,
+As confirmed by Pratik Patel, we are stopping  dev_staging port listening on port  "8081" as on 192.168.16.33.
+Above being done to run the docker "jdhrms-processes" which need to listen on same port i.e. "8081Kindly let me know if any further details needed."
+Kindly let us know if there are any concerns.
+As discussed, we've re-created the Docker setup on 192.168.16.33.
+However it was observed that port 8081 used by "jdhrms-processes" is  already in use on this server.
+Kindly check this and let us know how should we proceed with this.
+We will check and let you know.
+Needful has been Done. Credentials have been shared one to one.
+Pfb current space on server.
+As discussed, we have removed CATALINA.OUT log file from 172.29.8.232 server but space has not increased yet.
+Please provide approval for git user creation so that we could work upon it.
+Please find the attachments.
+##We have started restoration today morning and restoration is still in
+process , will updated once its completed.test
+
+############################################################################
+Handover to Afternoon shift
+
+Hi Team,
+
+1) Table Transfer from 12.219 3306 to 14.225- (Restoration going on in screen  screen -r 3635.testt)
+
+2) Re: Case Id:-CAS202300102 , Location:-Just Dial Limited - Chandigarh
+, Sub:-INIT - PORT issue at Chandigarh
+
+3) Re: Require 10 hours of downtime of 192.168.17.216 for migrating storage on new storage ( 11th January 2023 ,10PM )
+
+#################################################################################################
+Access has been Provide. Please check the connectivity.
+Needful has been done. Password same as 12.36
+As  discuss access has been given for misbackend user,password shared
+separately.
+
+As discussed access has been given.user_name and password same as you mentioned.
+Please check the connectivity.Kindly let us know if anything else is required.
+
+Kindly let me know if any further details needed
+Please find the log files for below mentioned crons..
+
+
+Needful has been Done. Will be sharing credentials one to one.
+##############################################################################################################
+access providing::::
+######################
+Hello Satyam,
+
+As discussed, the needful has been done for the below requirement. The credentials will be shared to you
+in a separate mail.
+
+As discussed, the needful has been done for the below requirement like provided full access on dbteam_temp/test database and select
+access on remaining databases.password same as you mentioned.Kindly let me know if any further details needed.
+
+
+##############################################################################################################
+
+Script tested successfully, cron will  be set as soon as updated.
+#############################################################################################################
+script testing purpose for approval after created script successfully::::
+SCRIPT 
+The script is created Successfully. Kindly provide a suitable time for
+testing it.
+#############################################################
+test the script mail:
+Hi,
+
+The Script is running under the screen of 30507.dakshina.Will let you know once done.
+
+################################################
+
+Hello satyam,
+
+PFA requested logs
+####################################################################
+
+script create:
+
+Working on it.....(1),Script is created as per requirement; Let me know if anything more needed or when can we test.........(2),  
+As discussed script testing was successful
+Kindly provide approval to set cron for the same......................(3)
+################################################
+Script:area
+###############################
+php /httpdjail/var/www/html/trafic_report/mongo_fetch_v3.php >/var/log/daily_log/mongo_fetch_v3.log 2>&1
+The script is created Successfully. Kindly provide a suitable time for
+testing it.
+#############
+Kindly provide an approval for this.
+We have created the script. Please let us know when can we test the script.
+The script has been tested successfully , please provide approval from the stakes to set the cron.
+##########################
+Needful has been done.Credentials remains the same as before.Please check the connectivity.Kindly let us know if anything else is required.
+has been Provided. Please check the connectivity.
+We have created the script.please provide approval from the stakes to set the cron.
+
+Hi,
+
+Working on it.
+#######################################
+ As discussed, the Alter query has been executed. Please let us convenient time to run further insert queries. Please find the result below
+ #######################################################
+
+
+ssh $SSH_ARGS web_backup@192.168.6.180 "sudo mysqldump --socket=/var/lib/SQL/mysql_6_180/mysql.sock db_autosuggest tbl_entity_autosuggest_realestate_snapshot |gzip -fv > /tmp/tbl_entity_autosuggest_realestate_snapshot.sql.gz && echo 'copying table to 6.180' && sudo scp /tmp/ttbl_entity_autosuggest_realestate_snapshot.sql.gz web_backup@192.168.39.120:/tmp"
+CHECK
+
+
+
+
+sudo mysqldump --socket=/var/lib/SQL/mysql_6_180/mysql.sock db_autosuggest tbl_entity_autosuggest_realestate_snapshot > tbl_entity_autosuggest_realestate_snapshot.sql
+
+
+
+echo "gunzipping table"
+sudo gunzip -fv /tmp/tbl_entity_autosuggest_realestate_snapshot.sql.gz
+CHECK
+echo "restoring table on 39.120"
+sudo mysql india_snapshot < /tmp/tbl_entity_autosuggest_realestate_snapshot.sql
+CHECK
+##############################################################
+step=4
+echo "Transferring table db_autosuggest tbl_entity_autosuggest_realestate_snapshot from 6.180 to 39.120"
+ssh $SSH_ARGS web_backup@192.168.6.180 "sudo mysqldump --socket=/var/lib/SQL/mysql_6_180/mysql.sock db_autosuggest tbl_entity_autosuggest_realestate_snapshot |gzip -fv > /tmp/tbl_entity_autosuggest_realestate_snapshot.sql.gz && echo 'copying table to 39.120' && sudo scp /tmp/tbl_entity_autosuggest_realestate_snapshot.sql.gz web_backup@192.168.39.120:/tmp"
+CHECK
+
+step=5
+
+echo "gunzipping table" 
+sudo ssh ${SSH_ARGS} web_backup@192.168.39.120 "sudo gunzip -fv /tmp/tbl_entity_autosuggest_realestate_snapshot.sql.gz"
+CHECK
+echo "Restoring table under india_snapshot on 39.120"
+sudo ssh ${SSH_ARGS} web_backup@192.168.39.120 "sudo mysql india_snapshot < /tmp/tbl_entity_autosuggest_realestate_snapshot.sql"
+CHECK
+
+echo "removing table tbl_salary.sql on 39 120"
+sudo ssh ${SSH_ARGS} web_backup@192.168.39.120 "sudo rm -rf /tmp/tbl_entity_autosuggest_realestate_snapshot.sql"
+CHECK
+
+............>>>>>>>
+
+
+
+
+#####################################################################################
+#####################################################################################
+echo "Transferring table Transferring table tbl_salary tbl_incentives tbl_bonanza from 12.145 to 14.48"
+sudo scp -r /tmp/tbl_salary.sql.gz /tmp/tbl_incentives.sql.gz /tmp/tbl_bonanza.sql.gz web_backup@192.168.14.48:/tmp
+CHECK
+
+echo "Uncompressing files on 192.168.14.48"
+ssh ${SSH_ARGS} web_backup@192.168.14.48 "sudo gunzip /tmp/tbl_salary.sql.gz /tmp/tbl_incentives.sql.gz /tmp/tbl_bonanza.sql.gz "
+CHECK
+
+echo "Restoring table under sales DB on 14.48"
+sudo ssh ${SSH_ARGS} web_backup@192.168.14.48 "sudo mysql sales < /tmp/tbl_salary.sql"
+CHECK
+
+echo "Restoring table under sales DB on 14.48"
+sudo ssh ${SSH_ARGS} web_backup@192.168.14.48 "sudo mysql sales < /tmp/tbl_incentives.sql"
+CHECK
+
+echo "Restoring table under sales DB on 14.48"
+sudo ssh ${SSH_ARGS} web_backup@192.168.14.48 "sudo mysql sales < /tmp/tbl_bonanza.sql"
+CHECK
+
+
+echo "removing table tbl_salary.sql on 14 48"
+ssh ${SSH_ARGS} web_backup@192.168.14.48 "sudo rm -rf /tmp/tbl_salary.sql /tmp/tbl_incentives.sql /tmp/tbl_bonanza.sql "
+CHECK
+
+
+echo "removing tables on 12 145"
+sudo rm -rf /tmp/tbl_salary.sql.gz /tmp/tbl_incentives.sql.gz /tmp/tbl_bonanza.sql.gz
+CHECK
+
+for finance server
+1.sudo mysql
+2.user create
+3. databases=`sudo mysql -Bse "show databases;" | egrep -iv "db_key|db_mk|mysql|information_schema"`
+4.echo $database
+5.for db in $databases; do sudo mysql -Bse "GRANT SELECT ON ${db}.* TO sitaramremalkar@10.10.22.10;";done
+########################
+work summary:
+Pratik Patel:Need to execute query on LIVE DB
+Kevin soni:Execute following update query
+Rishav:Script run
+satyam:script modifications and cron setup
+Dakshina:mysql access
+saloni:table transfer
+Sanjay Kumar Singj:table transfer
+
+
+Hi,
+
+Working on it.
+
+chaman:3 taiga (need set cron requested by ajay bulawat) + restart autosearch + keyurs work
+
+
+
+Suprajit:mysql access
+vijay:Mysql access
+Arun:Script modification
+dakshina:script modification
+
+
+
+
+
+
+
