@@ -752,3 +752,4 @@ Step 7: start MYSQL on new version
 Step 8: run mysql_upgrade command from terminal and monitor mysqld.log 
 Step 9: connect mysql console & do the flush tables and flush privileges
 Step 10: Restart mysql 
+hello
